@@ -8,9 +8,9 @@ import asia.stampy.client.message.subscribe.SubscribeMessage;
  * At the moment due {@link asia.stampy.common.message.AbstractMessage#toStompMessage(boolean)}
  * inappropriate implementation it has "null" in payload.
  */
-public class FixedSubscribeMessage extends SubscribeMessage {
+public class FixedBodySubscribeMessage extends SubscribeMessage {
 
-    FixedSubscribeMessage(String destination, String id) {
+    FixedBodySubscribeMessage(String destination, String id) {
         super(destination, id);
     }
 

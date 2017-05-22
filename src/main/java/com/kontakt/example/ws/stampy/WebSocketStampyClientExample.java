@@ -46,7 +46,7 @@ public class WebSocketStampyClientExample implements Closeable {
         remote.sendText(new FixedBodyConnectMessage(this.endpoint).toStompMessage(true));
 
         String id = UUID.randomUUID().toString();
-        SubscribeMessage subscribeMessage = new FixedSubscribeMessage(TOPIC_PREFIX + this.resourceId, id);
+        SubscribeMessage subscribeMessage = new FixedBodySubscribeMessage(TOPIC_PREFIX + this.resourceId, id);
         subscribeMessage.getHeader().addHeader(API_KEY_HEADER_NAME, this.apiKey);
         remote.sendText(subscribeMessage.toStompMessage(true));
     }
