@@ -1,0 +1,19 @@
+
+syntax: regexp
+.settings
+syntax: regexp
+target
+syntax: regexp
+.PROJECT
+syntax: regexp
+.project
+syntax: regexp
+.classpath
+rebel.xml
+syntax: regexp
+.class$
+syntax: regexp
+.idea
+syntax: regexp
+*.iml
+*.orig
